@@ -35,7 +35,7 @@ drawing.click_and_hold(canvas)
 
 drawing.move_by_offset(-55, 55).move_by_offset(55, 55).click(None).release().perform()
 
-
+# Rectangle
 driver.find_element_by_xpath('//*[@id="editor"]/div[1]/input[3]').click()
 
 b = driver.find_element_by_id('imageView')
@@ -44,7 +44,7 @@ drawing.click_and_hold(canvas)
 
 drawing.move_by_offset(50, -50).move_by_offset(50, 100).click(None).release().perform()
 
-
+# Erase horizontal line
 driver.find_element_by_xpath('//*[@id="editor"]/div[1]/input[5]').click()
 
 drawing.click_and_hold(canvas).move_by_offset(55, -55).move_by_offset(-55, -55).click(None).release().perform()
